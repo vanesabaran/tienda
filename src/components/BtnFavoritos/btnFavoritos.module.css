@@ -1,0 +1,18 @@
+.buttonAgregarFavorito{
+    background-color: #1f7bb5;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 10px;
+ }
+
+ .buttonAgregarFavorito:hover{
+   background-color: #bec1c3;
+   color: black;
+}
+
+ .buttonEliminarFavorito{
+    background-color: red;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 10px; 
+ }

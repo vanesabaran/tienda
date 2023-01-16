@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .carrito{
+    color: white;
+    width: 30px;
+    height: 30px;
+  }
+
+  .cantidad{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px 15px;
+    margin: 0px 0px 0px 10px;
+  }
+
+  .user{
+    color: white;
+    width: 30px;
+    height: 30px;
+  }
+
+  p {
+    color: white;
+  }

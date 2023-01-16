@@ -1,0 +1,82 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tituloCarrito{
+    text-align: left;
+    font-size: 20px;
+}
+
+.contenidoCarrito{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.tabla{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.informacion{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+}
+
+.precio{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.cantidad{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.iconoEliminar{
+    width: 25px;
+    height: 25px;
+}
+
+.iconoEliminar:hover{
+    stroke: red;
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.total h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.totalPagar{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.hiddenCart{
+    display: none;
+}

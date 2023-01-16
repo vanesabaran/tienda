@@ -1,0 +1,14 @@
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+ }
+
+.item{
+    padding: 10px 50px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 2px;
+}

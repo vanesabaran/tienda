@@ -1,0 +1,50 @@
+.container{
+   background-color: white;
+   border: 1px solid grey ;
+   border-radius: 15px;
+   width: 80%;
+   min-height: 400px;
+   padding: 30px;
+   margin: 30px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+}
+
+.card {
+   text-decoration: none;
+}
+
+.centerContainer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container:hover{
+   box-shadow: 0 10px 50px rgba(41, 65, 249, 0.2);
+   border: 2px solid rgb(3, 6, 111) ;
+}
+
+.image{
+   height: 320px;
+}
+
+.titulo {
+   height: 46px;
+}
+
+h2{
+   color: rgb(0, 149, 255);
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   margin: 0;
+}
+
+.description{
+   text-align: justify;
+}
+
+.price{
+   color: #1f7bb5;
+   font-size: 25px;
+   font-weight: 800;
+}

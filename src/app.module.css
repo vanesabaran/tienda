@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+p {
+  color: black;
+}
+
+.ventana{
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+}

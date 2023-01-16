@@ -1,0 +1,18 @@
+.buttonAgregarCarrito{
+    background-color: #1f7bb5;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 10px;
+ }
+
+ .buttonAgregarCarrito:hover{
+    background-color: #77c0ee;
+    color: black;
+ }
+
+.buttonEliminarCarrito{
+    background-color: red;
+    color: #fff;
+    padding: 10px 30px;
+    margin: 10px;
+ }
