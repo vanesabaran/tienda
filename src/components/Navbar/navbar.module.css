@@ -9,6 +9,7 @@
 .box {
   display: flex;
   align-items: center;
+  color: #fff;
 }
 
 .navbar a {
@@ -17,6 +18,15 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+  }
+
+  .categorias{
+    background-color: #333;
+    color: #f2f2f2;
+    font-size: 17px;
+    border: #333;
+    padding: 0;
+    text-align: center;
   }
 
   .carrito{

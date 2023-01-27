@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.btnCategorias{
+    padding: 20px 80px;
+    margin: 0px 30px;
+    font-size: 20px;
+    background-color: darkcyan;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}

@@ -5,8 +5,9 @@ import styles from "./cardIndividual.module.css"
 import BtnCarrito from '../BtnCarrito'
 import BtnFavoritos from '../BtnFavoritos'
 import {AiOutlineArrowDown, AiOutlineArrowUp} from 'react-icons/ai'
+import { convertirPrimerLetraMayuscula } from '../../utils/functions'
 
-const CardIndividual = ({agregarCarrito, agregarFavorito}) => {
+const CardIndividual = ({mostrarVentana, agregarCarrito, agregarFavorito}) => {
   //Estados
   const {id} = useParams() //Desesctruracion
   const [producto, setProducto] = useState({})
@@ -47,13 +48,14 @@ const CardIndividual = ({agregarCarrito, agregarFavorito}) => {
           <div className={styles.contenido}>
             {/*2° columna*/}
             <h2>{producto.title}</h2>
+            <h3>{convertirPrimerLetraMayuscula(producto.category)}</h3>
               { toggle ? <p className={styles.description}>{producto.description}</p> : <p className={styles.description}>{producto.description.slice(0, 81).concat("...")}</p>}
               <div className={styles.cajaFlecha}>
                 {toggle ? <AiOutlineArrowUp className={styles.flecha} onClick={() => handleToggle(toggle)}/> : <AiOutlineArrowDown className={styles.flecha} onClick={() => handleToggle(toggle)} />}
               </div>
             <p className={styles.price}>${producto.price}</p>
-            <BtnCarrito agregarCarrito={agregarCarrito} producto={producto} />
-            <BtnFavoritos agregarFavorito={agregarFavorito} producto={producto} />
+            <BtnCarrito mostrarVentana={mostrarVentana} agregarCarrito={agregarCarrito} producto={producto} />
+            <BtnFavoritos mostrarVentana={mostrarVentana} agregarFavorito={agregarFavorito} producto={producto} />
           </div>
         </div>
       </div>

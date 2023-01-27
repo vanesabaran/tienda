@@ -1,4 +1,5 @@
-import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
 import Card from "../Card";
 import Resumen from "../Resumen";
 import styles from "./productList.module.css";
@@ -13,9 +14,10 @@ const ProductList = ({
 }) => {
   const path = useLocation().pathname
 
+console.log("PRODUCTOS", productos);
   return (
     <div className={styles.container}>
-      <div className={styles.item}>
+      {productos.length > 0 ? (<div className={styles.item}>
         {productos.map((producto, i) => (
           <Card
             key={i}
@@ -27,7 +29,9 @@ const ProductList = ({
             mostrarVentana={mostrarVentana}
           />
         ))}
-      </div>
+      </div>) : <h2>{path === "/favoritos" && "No se encuentra los productos en favoritos."} {path === "/carrito" && "No se encuentra los productos en el carrito."} {path === "/home" && "No hay productos para mostrar"}</h2>}
+      
+   
        {path === "/carrito" && <Resumen /> }
     </div>
   );

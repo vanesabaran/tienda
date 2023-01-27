@@ -1,18 +1,20 @@
 import {AiOutlineClose} from 'react-icons/ai'
+import { guardarSiglaPopUp, reducirStringPopUp } from '../../utils/functions'
 import styles from './popup.module.css'
 
-const Popup = ({pregunta, setShow}) => {
+const Popup = ({aceptar, pregunta, setShow}) => {
   return (
-    <div className={styles.contenedorPrincipal}>
-      <div className={styles.cerrar}>
-        <AiOutlineClose onClick={() => setShow(false)}/>
-      </div>
-      <div className={styles.texto}>
-        <p>Texto</p>
-      </div>
-      <div className={styles.boton}>
-        <button>Aceptar</button>
-        <button>Cancelar</button>
+    <div className={styles.modal}>
+      <div className={styles.overlay}></div>
+      <div className={styles.modalContent}>
+        <p className={styles.texto}>{reducirStringPopUp(pregunta)}</p>
+        <div className={styles.boton}>
+          <button className={styles.aceptar} onClick={() => aceptar(guardarSiglaPopUp(pregunta))}>Aceptar</button>
+          <button className={styles.cancelar} onClick={() => setShow(false)}>Cancelar</button>
+        </div>
+        <div className={styles.cerrar}>
+          <AiOutlineClose onClick={() => setShow(false)}/>
+        </div>
       </div>
     </div>
   )
